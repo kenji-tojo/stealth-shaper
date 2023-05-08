@@ -27,11 +27,11 @@ $ cmake --build . -j
 will create the executable ```stealth-headless``` under ```build/```
 
 
-Then, the command
+Then, run
 ```
 $ ./stealth-headless ../assets/bunny.obj
 ```
-will run our stealth optimization. The result will be saved as ```build/result/stealth.obj```.
+to perform our stealth optimization. The result will be saved as ```build/result/stealth.obj```.
 
 The program will also save the intermediate shapes under ```build/result```.
 
