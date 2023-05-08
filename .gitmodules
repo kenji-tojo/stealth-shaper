@@ -1,0 +1,6 @@
+[submodule "stealth-shaper/ext/libigl"]
+	path = stealth-shaper/ext/libigl
+	url = git@github.com:libigl/libigl.git
+[submodule "stealth-shaper/ext/bvh"]
+	path = stealth-shaper/ext/bvh
+	url = git@github.com:madmann91/bvh.git

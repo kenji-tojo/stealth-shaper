@@ -1,0 +1,10 @@
+*.so
+*.ini
+*.DS_Store
+
+/build
+
+/cmake-build-*
+/.idea
+
+**/__pycache__
