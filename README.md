@@ -9,12 +9,12 @@ $ mkdir build && cd build
 $ cmake -DCMAKE_BUILD_TYPE=Release ..
 $ cmake --build . -j
 ```
-will create the executable ```stealth``` under ```build/```
+will create the executable ```stealth-headless``` under ```build/```
 
 
 Then, the command
 ```
-$ ./stealth ../assets/bunny.obj
+$ ./stealth-headless ../assets/bunny.obj
 ```
 will run our stealth optimization. The result will be saved as ```build/result/stealth.obj```.
 

@@ -89,8 +89,10 @@ void stealth_shaper_iteration(
 
         timer.stop();
 
-        auto curr_sec = data.result.elapsed_secs.back();
-        data.result.elapsed_secs.push_back(curr_sec+timer.elapsed_sec());
+        if (args.enable_validation) {
+            auto curr_sec = data.result.elapsed_secs.back();
+            data.result.elapsed_secs.push_back(curr_sec+timer.elapsed_sec());
+        }
     }
 
     data.result.iter_id += args.n_iter;
