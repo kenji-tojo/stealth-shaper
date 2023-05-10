@@ -33,7 +33,7 @@ $ ./stealth-headless ../assets/bunny.obj
 ```
 to perform our stealth optimization. The result will be saved as ```build/result/stealth.obj```.
 
-The program will also save the intermediate shapes under ```build/result```.
+The program will also save the intermediate shapes under ```build/result``` with ```-s``` flag.
 
 ---
 ## More contents are comming soon!
