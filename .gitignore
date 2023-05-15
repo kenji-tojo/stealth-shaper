@@ -2,9 +2,10 @@
 *.ini
 *.DS_Store
 
-/build
+**/build
+**/result
 
-/cmake-build-*
-/.idea
+**/cmake-build-*
+**/.idea
 
 **/__pycache__
