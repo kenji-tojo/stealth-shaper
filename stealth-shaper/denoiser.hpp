@@ -57,7 +57,6 @@ public:
 
         eLenMat.resize(uE.rows(), uE.rows());
         eLenMat.setZero();
-        double sumL = 0.;
         for (int jj = 0; jj < uE.rows(); ++jj) {
             const auto p0 = V.row(uE(jj,0));
             const auto p1 = V.row(uE(jj,1));
@@ -67,7 +66,6 @@ public:
 
         Eigen::Vector<typename DerivedV::Scalar, Eigen::Dynamic> A;
         igl::doublearea(V, F, A);
-        const auto totA = A.sum();
         areaMat.resize(F.rows(), F.rows());
         areaMat.setZero();
         for (int kk = 0; kk < F.rows(); ++kk) {
@@ -174,11 +172,11 @@ private:
         }
     }
 
-    template<typename DerivedL, typename DerivedN, typename DerivedI>
+    template<typename DerivedL, typename DerivedN, typename DerivedP>
     void solve_for_P(
             const Eigen::MatrixBase<DerivedL> &lambda,
             const Eigen::MatrixBase<DerivedN> &N,
-            Eigen::PlainObjectBase<DerivedI> &P) {
+            Eigen::PlainObjectBase<DerivedP> &P) {
         assert(eLenMat.rows() > 0 && areaMat.rows() > 0);
         MatrixX W = nblMat * N;
         W -= (1.0 / r) * lambda;
@@ -193,10 +191,10 @@ private:
         }
     }
 
-    template<typename DerivedL, typename DerivedI, typename DerivedN>
+    template<typename DerivedL, typename DerivedP, typename DerivedN>
     void solve_for_N(
             const Eigen::MatrixBase<DerivedL> &lambda,
-            const Eigen::MatrixBase<DerivedI>& P,
+            const Eigen::MatrixBase<DerivedP>& P,
             const Eigen::MatrixBase<DerivedN> &inN,
             Eigen::PlainObjectBase<DerivedN> &N) {
         assert(eLenMat.rows() > 0 && areaMat.rows() > 0);
