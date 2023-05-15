@@ -1,0 +1,48 @@
+{
+    "bsdfs": [
+        {
+            "name": "ground",
+            "type": "phong",
+            "albedo": 0.7,
+            "kd": 0.5,
+            "n": 5
+        },
+        {
+            "name": "wall",
+            "type": "phong",
+            "albedo": 0.9,
+            "kd": 1.0,
+            "n": 5
+        }
+    ],
+    "objects": [
+        {
+            "name": "ground",
+            "type": "plane",
+            "bsdf": "ground",
+            "scale": [80.0, 80.0],
+            "position": [0.0, 0.0, 0.0],
+            "normal": [0.0, 0.0, 1.0],
+            "normal_map": {
+                "type": "ball",
+                "res": 64
+            }
+        },
+        {
+            "name": "wall",
+            "type": "plane",
+            "bsdf": "wall",
+            "scale": [80.0, 80.0],
+            "position": [0.0, 82.0, 80.0],
+            "normal": [0.0, -1.0, 0.0]
+        }
+    ],
+    "light": {
+        "wi": [0.0, -50.0, 100.0],
+        "Li": 2.0
+    },
+    "options": {
+        "res": 128,
+        "depth": 3
+    }
+}

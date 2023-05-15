@@ -4,3 +4,6 @@
 [submodule "stealth-shaper/ext/bvh"]
 	path = stealth-shaper/ext/bvh
 	url = git@github.com:madmann91/bvh.git
+[submodule "ext/nanobind"]
+	path = ext/nanobind
+	url = git@github.com:wjakob/nanobind.git
