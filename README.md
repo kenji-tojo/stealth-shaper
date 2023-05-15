@@ -35,5 +35,10 @@ to perform our stealth optimization. The result will be saved as ```build/result
 
 The program will also save the intermediate shapes under ```build/result``` with ```-s``` flag.
 
+## License
+The software is free for personal use and non-commercial research conducted within non-commercial organizations. 
+If you want to use it for commercial purposes, please contact us.
+
 ---
 ## More contents are comming soon!
+
