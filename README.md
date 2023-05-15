@@ -37,7 +37,7 @@ The program will also save the intermediate shapes under ```build/result``` with
 
 ## License
 The software is free for personal use and non-commercial research conducted within non-commercial organizations. 
-If you want to use it for commercial purposes, please contact us.
+If you want to use it for commercial purposes, please contact [Kenji Tojo](https://kenji-tojo.github.io/).
 
 ---
 ## More contents are comming soon!
